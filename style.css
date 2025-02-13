@@ -9,19 +9,24 @@ body {
 #clock {
     font-size: 100px;
     text-align: center;
+    color: white;
     margin-top: 200px;
     margin-bottom: 0;
-    color: white;
 }
 #greeting {
     font-size: 40px;
     text-align: center;
     margin-top: 0;
+    position: relative;
+    top: 60%;
     color: white;
 }
 #quote {
     text-align: center;
     color: white;
+    position: absolute;
+    top: 90%;
+    left: 37%;
 }
 #quote span:last-child {
     opacity: 0.6;
@@ -41,8 +46,46 @@ img {
 #login-form {
     position: absolute;
     top: 50%;
-    left: 35%;
+    left: 42%;
     padding: 20px;
     flex-direction: column;
     align-items: center;
+}
+.trans {
+    background-color: transparent;
+    border: none;
+}
+#todo-form {
+    position: absolute;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    top: 60%;
+    left: 43%;
+}
+input::placeholder {
+    color: white;
+}
+#todo-input {
+    width: 200px;
+}
+ul {
+    position: relative;
+    top: -300px;
+}
+li {
+    color: white;
+    margin: 5px;
+}
+#todolist {
+    padding: 28px;
+    color: white;
+    position: relative;
+    top: -300px;
+    font-size: 20px;
+}
+#login-button {
+    background-color: transparent;
+    color: white;
+    border: none;
 }

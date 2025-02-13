@@ -10,13 +10,14 @@
 
     <!--이름 적는 폼-->
     <form calss="hidden" id="login-form">
-        <input 
+        <input
+            class="trans"
             required
             maxlength="15"
-            type="text" 
+            type="text"
             placeholder="What is your name?"
         >
-        <input type="submit" value="Log In">
+        <input id="login-button" type="submit" value="Log In">
     </form>
 
     <!--시계-->
@@ -27,9 +28,11 @@
 
     <!--투두리스트-->
     <form id="todo-form">
-        <input type="text" placeholder="Write a To Do and Press Enter" required>
+        <input class="trans" id="todo-input" type="text" placeholder="Write a To Do and Press Enter" required>
     </form>
-    
+
+    <span id="todolist">Todo List</span>
+
     <ul id="todo-list">
         <li></li>
     </ul>

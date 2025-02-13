@@ -34,7 +34,8 @@ function paintToDo(newTodo) {
     // [object, object]으로 뜨기 때문에
     //사용자가 작성한 입력값만 텍스트 추가하기 위해
     const button = document.createElement("button");
-    button.innerText = "❌";
+    button.innerText = "X";
+    button.style.marginLeft = "20px";
     button.addEventListener("click", deleteToDo);
     li.appendChild(span);
     //li 에 span 추가하기
